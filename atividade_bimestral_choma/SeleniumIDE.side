@@ -1,0 +1,83 @@
+{
+  "id": "8f2d9c26-4221-4e3e-8f5e-aa536c248a21",
+  "version": "2.0",
+  "name": "prova_pratica_choma",
+  "url": "https://kovaaks.com/kovaaks/main",
+  "tests": [{
+    "id": "9be0ff6b-57a8-4516-ab89-6d2485bb1ece",
+    "name": "deveEncontrarMinhaSteamPorSiteExterno",
+    "commands": [{
+      "id": "a7697726-4554-4368-8d49-e122698e2355",
+      "comment": "",
+      "command": "open",
+      "target": "https://kovaaks.com/kovaaks/main",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e694b4ca-fb46-4c67-b6d1-acd1b00fda5f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "793x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "949f68a0-086e-401b-a66c-308f489e72c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.global-menu .icon-hitarea",
+      "targets": [
+        ["css=.global-menu .icon-hitarea", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b06d8970-f376-4aa8-a76b-baff8cc5d6fc",
+      "comment": "",
+      "command": "type",
+      "target": "css=.hd-input",
+      "targets": [
+        ["css=.hd-input", "css:finder"],
+        ["xpath=//input[@value='RenanKeehl']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "RenanKeehl"
+    }, {
+      "id": "76e7c086-3625-4651-b938-4c31afc1a607",
+      "comment": "",
+      "command": "click",
+      "target": "css=.App__NavBackdrop-sc-4s233i-0",
+      "targets": [
+        ["css=.App__NavBackdrop-sc-4s233i-0", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e34cace0-df43-49f4-8515-fa49cb607b0f",
+      "comment": "",
+      "command": "click",
+      "target": "id=downshift-28-item-0",
+      "targets": [
+        ["id=downshift-28-item-0", "id"],
+        ["css=#downshift-28-item-0", "css:finder"],
+        ["xpath=//li[@id='downshift-28-item-0']", "xpath:attributes"],
+        ["xpath=//div[@id='downshift-28-menu']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'RenanKeehl')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "23050f75-1064-4e05-99eb-cc6575836a6d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9be0ff6b-57a8-4516-ab89-6d2485bb1ece"]
+  }],
+  "urls": ["https://kovaaks.com/kovaaks/main"],
+  "plugins": []
+}
